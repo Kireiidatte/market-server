@@ -25,7 +25,11 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.INTEGER(1),
             allowNull: false,
             defaultValue: 0,
-        }
+        },
+        type: {
+            type : DataTypes.STRING(50),
+            allowNull: true,
+        },
     });
     return product;
-}
+};
